@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@500&display=swap');
+
+/* Reset CSS styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Changa', sans-serif;
+}
+
+/* Body styles */
+body {
+    /* Background animation */
+    animation: animatedBg 3s infinite alternate linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container styles */
+.container {
+    width: 50%;
+}
+
+/* Content styles */
+.content {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Input field styles */
+.content>input {
+    width: 75%;
+    padding: 0px 15px;
+    font-size: 1.25rem;
+    border: 3px white solid;
+    outline: none;
+    background-color: transparent;
+    color: white;
+}
+
+/* Button styles */
+.content>button {
+    width: 20%;
+    border: 3px white solid;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+/* Background animation keyframes */
+@keyframes animatedBg {
+    0% {
+        background: rgb(255, 0, 0);
+    }
+
+    25% {
+        background: rgb(255, 0, 149);
+    }
+
+    50% {
+        background: rgb(0, 132, 255);
+    }
+
+    75% {
+        background: rgb(21, 255, 0);
+    }
+
+    100% {
+        background: rgb(255, 255, 0);
+    }
+}
